@@ -1,0 +1,106 @@
+@use '../../../colors' as *;
+
+.useState {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    color: $secondary;
+    opacity: 0.2;
+    font-size: 18px;
+    font-family: 'La Belle Aurore';
+
+    span {
+        display: block;
+    }
+}
+
+.effect-container {
+    font-size: 20px;
+    color: $secondary;
+    font-family: 'La Belle Aurore';
+
+    span {
+        display: block;
+    }
+    
+    .useEffect {
+        position: absolute;
+        top: 0%;
+        left: 52%;
+        font-size: 18px;
+        color: $secondary;
+        font-family: 'La Belle Aurore';
+        opacity: 0.4;
+    }
+
+    .gsap {
+        position: absolute;
+        top: 5%;
+        left: 52%;
+        font-size: 18px;
+        color: $secondary;
+        font-family: 'La Belle Aurore';
+        opacity: 0.3;
+    }
+
+    .effect-closing {
+        position: absolute;
+        bottom: 2%;
+        left: 90%;
+        font-size: 18px;
+        color: $secondary;
+        font-family: 'La Belle Aurore';
+        opacity: 0.4;
+
+    }
+}
+
+.imports {
+    position: absolute;
+    top: -2%;
+    left: 75%;
+    color: $secondary;
+    opacity: 0.3;
+    font-size: 17px;
+    font-family: 'La Belle Aurore';
+
+    span {
+        display: block;
+    }
+}
+
+.css {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    color: $secondary;
+    opacity: 0.3;
+    font-size: 18px;
+    font-family: 'La Belle Aurore';
+
+    span {
+        display: block;
+    }
+}
+
+.keyframes {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: $secondary;
+    opacity: 0.3;
+    font-size: 15px;
+    font-family: 'La Belle Aurore';
+
+    span {
+        display: block;
+    }
+}
+
+.indent-0 {
+    margin-left: -40px; // simulate code indentation
+}
+
+.indent-1 {
+    margin-left: -20px; // simulate code indentation
+}

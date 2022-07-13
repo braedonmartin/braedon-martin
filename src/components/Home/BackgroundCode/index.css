@@ -1,0 +1,95 @@
+.useState {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  color: #76ff8d;
+  opacity: 0.2;
+  font-size: 18px;
+  font-family: "La Belle Aurore";
+}
+.useState span {
+  display: block;
+}
+
+.effect-container {
+  font-size: 20px;
+  color: #76ff8d;
+  font-family: "La Belle Aurore";
+}
+.effect-container span {
+  display: block;
+}
+.effect-container .useEffect {
+  position: absolute;
+  top: 0%;
+  left: 52%;
+  font-size: 18px;
+  color: #76ff8d;
+  font-family: "La Belle Aurore";
+  opacity: 0.4;
+}
+.effect-container .gsap {
+  position: absolute;
+  top: 5%;
+  left: 52%;
+  font-size: 18px;
+  color: #76ff8d;
+  font-family: "La Belle Aurore";
+  opacity: 0.3;
+}
+.effect-container .effect-closing {
+  position: absolute;
+  bottom: 2%;
+  left: 90%;
+  font-size: 18px;
+  color: #76ff8d;
+  font-family: "La Belle Aurore";
+  opacity: 0.4;
+}
+
+.imports {
+  position: absolute;
+  top: -2%;
+  left: 75%;
+  color: #76ff8d;
+  opacity: 0.3;
+  font-size: 17px;
+  font-family: "La Belle Aurore";
+}
+.imports span {
+  display: block;
+}
+
+.css {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  color: #76ff8d;
+  opacity: 0.3;
+  font-size: 18px;
+  font-family: "La Belle Aurore";
+}
+.css span {
+  display: block;
+}
+
+.keyframes {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: #76ff8d;
+  opacity: 0.3;
+  font-size: 15px;
+  font-family: "La Belle Aurore";
+}
+.keyframes span {
+  display: block;
+}
+
+.indent-0 {
+  margin-left: -40px;
+}
+
+.indent-1 {
+  margin-left: -20px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,18 @@
+@use './colors' as *;
+
+html{
+    font-size: 62.5%;
+  }
+  
+  body {
+    height: 100vh;
+    // background: linear-gradient(200deg,rgba(92,30,166,1) 0%,rgba(200,67,94,1) 100%);
+    background: linear-gradient(200deg,rgba(92,30,166,1) 0%,rgb(66, 101, 177) 100%);
+    margin: 0;
+    font: 300 11px/1.4 "Helvetica Neue", sans-serif;
+    color: #444;
+    overflow: hidden;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
