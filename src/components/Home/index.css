@@ -76,6 +76,7 @@ h2 {
 .flat-button:hover {
   background-color: #76ff8d;
   color: #333;
+  cursor: pointer;
 }
 
 .UseEffectStyle {

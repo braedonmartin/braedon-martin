@@ -25,9 +25,9 @@ function About() {
                             idx={15} // 1.5 second delay
                         />
                     </h1>
-                    <p>I'm a very ambitious front-end developer looking for a role in an established IT company with the opportunity to work with the latest technologies on challenging and diverse projects</p>
-                    <p>I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
-                    <p>If I need to define mysign in one sentence...</p> 
+                    <p>I'm a front end developer with a passion for coding and building things! I first learned how to code in 2016 and I've been in love with it ever since. It started with an introduction to C and C++ in school, and I have branched out further learning front-end technologies and taking courses such as Googles Professional Certificate in It Automation with Python.</p>
+                    <p></p>
+                    <p></p> 
                 </div>
 
                 <div className='stage-cube-cont'>

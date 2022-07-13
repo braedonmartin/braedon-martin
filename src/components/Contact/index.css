@@ -33,7 +33,7 @@
 .contact-form input[type=email] {
   width: 100%;
   border: 0;
-  background-color: #115173;
+  background-color: rgba(39, 50, 107, 0.507);
   height: 50px;
   font-size: 16px;
   color: #fff;
@@ -43,7 +43,7 @@
 .contact-form textarea {
   width: 100%;
   border: 0;
-  background-color: #115173;
+  background-color: rgba(39, 50, 107, 0.507);
   height: 50px;
   font-size: 16px;
   color: #fff;
@@ -61,6 +61,11 @@
   border: 1px solid #76ff8d;
   float: right;
   border-radius: 4px;
+}
+.contact-form .flat-button:hover {
+  background-color: #76ff8d;
+  color: #333;
+  cursor: pointer;
 }
 
 .info-map {
