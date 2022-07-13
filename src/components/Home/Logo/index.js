@@ -11,7 +11,7 @@ function Logo() {
     <div className='logo-container' ref={bgRef}>
         <img ref={solidLogoRef} className='solid-logo' src={LogoB} alt="B"/>
         <svg
-            className='logo-1'
+            className='logo-outline'
             width="714"
             height="891"
             version="1.0"

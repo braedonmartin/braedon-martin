@@ -1,3 +1,10 @@
+.code-container {
+  -webkit-animation: fadeOut 5s forwards;
+          animation: fadeOut 5s forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
 .useState {
   position: absolute;
   top: 20%;

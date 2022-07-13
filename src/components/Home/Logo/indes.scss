@@ -2,7 +2,7 @@
 
 .logo-container {
     z-index: 1;
-    width: 550px;
+    width: 58vh;
     position: absolute;
     top: 8%;
     right: 14%;
@@ -11,8 +11,8 @@
     margin: auto;
     opacity: 1;
     transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-    animation-delay: 6s;
+	  animation: float 6s ease-in-out infinite;
+    animation-delay: 5s;
 }
 
 @keyframes float {
@@ -33,11 +33,6 @@ svg {
     bottom: 0;
     //transform: rotateZ(30deg) !important;
 }
-.logo-2 {
-    position:absolute;
-    top: 3%;
-    left: -10%;
-}
 
 .solid-logo {
     position: absolute;
@@ -48,44 +43,22 @@ svg {
     margin: auto;
     width: 100%;
     opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 5s;
+    animation: fadeIn ease 5s forwards;
     animation-delay: 5s;
     // z-index: 1;
 }
 
 .svg-container {
-    stroke: $secondary;
+    stroke: #76ff8d44;
     stroke-width: 3px;
-    opacity: 0.5;
-    animation: fadeout 10s;
+    animation: fadeOut 5s forwards;
+    animation-delay: 4s;
 }
 
-@keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-}
+@keyframes fadeout
+{
 
-/*=== FADE IN  ===*/
-@-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-  }
+from{opacity: 1;}
+to {opacity: 0;}
+
+}
