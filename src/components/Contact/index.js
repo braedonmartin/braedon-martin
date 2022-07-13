@@ -94,17 +94,11 @@ const Contact = () => {
           <span>braedonmartin22@gmail.com</span>
         </div>
         <div className="map-wrap">
-        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={[51.505, -0.09]}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer>
+        <MapContainer center={[44.38931621155745, -79.69017679844653]} zoom={13}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[44.38931621155745, -79.69017679844653]}>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
