@@ -47,9 +47,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            I am interested in any and all opportunities - especially ambitious or
+            large projects. However, if you have other request or question, or just wanna say hi,
+            don't hesitate to contact me using the below form either.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -94,7 +94,7 @@ const Contact = () => {
           <span>braedonmartin22@gmail.com</span>
         </div>
         <div className="map-wrap">
-        <MapContainer center={[44.38931621155745, -79.69017679844653]} zoom={13}>
+        <MapContainer center={[44.38931621155745, -79.69017679844653]} zoom={11}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[44.38931621155745, -79.69017679844653]}>
             <Popup>Hi! I'm currently located in the downtown Barrie area</Popup>
