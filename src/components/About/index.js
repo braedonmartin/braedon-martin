@@ -25,8 +25,8 @@ function About() {
                             idx={15} // 1.5 second delay
                         />
                     </h1>
-                    <p>I'm a front end developer with a passion for coding and building things! I first learned how to code in 2016 and I've been in love with it ever since. It started with an introduction to C and C++ in school, and I have branched out further learning front-end technologies and taking courses such as Googles Professional Certificate in It Automation with Python.</p>
-                    <p>I'm constantly learning new things and always looking to gain more experience working with new languages. You can usually find me watching tutorials on something I find interesting or working on new projects!</p>
+                    <p>I'm a front end developer with a passion for coding and building things! I first learned how to code in 2016 and I've been in love with it ever since. It started with an introduction to C and C++ in school, and I have branched out further learning front-end technologies and taking courses such as Googles Professional Certificate in IT Automation with Python.</p>
+                    <p>I'm constantly learning new skills and always looking to gain more experience working with new languages. You can usually find me watching tutorials on something I find interesting or working on new projects!</p>
                     <p></p> 
                 </div>
 
