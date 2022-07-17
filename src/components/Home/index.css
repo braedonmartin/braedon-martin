@@ -45,6 +45,9 @@
           animation: rotateIn 1s linear both;
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
+  user-drag: none;
+  -webkit-user-drag: none;
+  -ms-user-select: none;
 }
 
 h2 {

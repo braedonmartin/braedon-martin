@@ -70,6 +70,9 @@
 .page-select a.about-link::after {
   content: "ABOUT";
 }
+.page-select a.portfolio-link::after {
+  content: "PORTFOLIO";
+}
 .page-select a.contact-link::after {
   content: "CONTACT";
 }

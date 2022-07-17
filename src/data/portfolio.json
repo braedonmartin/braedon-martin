@@ -1,0 +1,16 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/meme-generator/meme-generator.png",
+            "title": "Meme Generator",
+            "description": "A meme generator that feteches a random meme image from an API and and allows you to add text to the top and bottom of the image.",
+            "url": "https://braedonmartin.github.io/meme-generator/"
+        },
+        {
+            "cover": "/portfolio/tenzies/tenzies.png",
+            "title": "Tenzies",
+            "description": "A simple game of tenzies, the goal is to make all the dice the same value and upon winning the page rains confetti and the user can start a new game.",
+            "url": "https://braedonmartin.github.io/tenzies-game/"
+        }
+    ]
+}

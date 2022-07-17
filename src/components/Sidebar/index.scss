@@ -86,7 +86,9 @@
         &.about-link::after {
             content: 'ABOUT';
         }
-
+        &.portfolio-link::after {
+            content: 'PORTFOLIO';
+        }
         &.contact-link::after {
             content: 'CONTACT';
         }
