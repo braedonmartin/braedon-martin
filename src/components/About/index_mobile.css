@@ -49,6 +49,9 @@
   align-items: center;
   box-shadow: 0 0 20px 0px #76ff8d;
 }
+.mobile .cubespinner div .fa-fw {
+  width: 17vh;
+}
 .mobile .cubespinner .face1 {
   transform: translateZ(11vh);
   color: #dd0031;
