@@ -29,7 +29,6 @@ function Layout() {
                     </div>
                 </div>
             <Sidebar />
-
         </div>
     )
 }
