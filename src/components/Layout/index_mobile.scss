@@ -1,6 +1,6 @@
 @use "../../colors" as *;
 
-.non-mobile{
+.mobile{
     .page {
         width: 100%;
         height: 100%;
@@ -9,7 +9,7 @@
 
     .top-tags {
         bottom: auto;
-        top: 35px;
+        top: 15px;
     }
 
     .tags {
@@ -17,7 +17,7 @@
         opacity: 0.6;
         position: absolute;
         bottom: 0;
-        left: 120px;
+        left: 25px;
         font-size: 18px;
         font-family: 'La Belle Aurore';
     }
@@ -28,17 +28,21 @@
 
     .container {
         width: 100%;
-        height: 90%;
         min-height: 566px;
         will-change: contents;
         position: absolute;
         opacity: 0; // will have fade in animation
-        top: 5%;
+        top: 13vh;
         margin: 0 auto;
         z-index: 1;
         transform-style: preserve-3d;
         animation: fadeIn 1s forwards; // from animate.css
         animation-delay: 1s;
+    }
+
+    .contact-page {
+        height: 30%;
+        min-height: 0px;
     }
 
     .about-page,
@@ -101,10 +105,9 @@
         }
         .text-zone {
             position: absolute;
-            left: 10%;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 35%;
+            left: 5%;
+            top: 35%;
+            width: 92%;
             vertical-align: middle;
             display: table-cell;
             max-height: 90%;
@@ -115,5 +118,4 @@
                 color: #fff;
             }
         }
-    }
-}
+    }}

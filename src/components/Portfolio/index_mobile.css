@@ -1,30 +1,33 @@
-.non-mobile .portfolio-page {
-  padding-left: 100px;
-  padding-right: 50px;
-  width: calc(100% - 150px);
-  position: initial;
+.mobile .portfolio-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   overflow: auto;
+  margin-top: -40px;
 }
-.non-mobile .portfolio-page h1.page-title {
-  margin-left: 100px;
-  margin-top: 100px;
+.mobile .portfolio-page h1.page-title {
+  align-self: flex-start;
+  margin-top: 13px;
+  margin-left: 40px;
 }
-.non-mobile .portfolio-page .images-container {
+.mobile .portfolio-page .images-container {
   display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   gap: 15px;
   flex-wrap: wrap;
   padding-bottom: 100px;
 }
-.non-mobile .portfolio-page .image-box {
+.mobile .portfolio-page .image-box {
   position: relative;
-  flex: 1 1 20%;
-  height: 400px;
   overflow: hidden;
+  height: 400px;
+  width: 90vw;
   border-radius: 10px;
-  max-width: calc(25% - 10px);
+  max-width: 420px;
 }
-.non-mobile .portfolio-page .image-box .portfolio-image {
+.mobile .portfolio-page .image-box .portfolio-image {
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -32,7 +35,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.non-mobile .portfolio-page .image-box .content {
+.mobile .portfolio-page .image-box .content {
   position: absolute;
   bottom: -70px;
   width: 100%;
@@ -41,7 +44,7 @@
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgb(0, 0, 0));
 }
-.non-mobile .portfolio-page .image-box .title {
+.mobile .portfolio-page .image-box .title {
   margin-bottom: 0;
   margin-top: 0;
   color: #fff;
@@ -49,14 +52,14 @@
   font-weight: 500;
   line-height: 24px;
 }
-.non-mobile .portfolio-page .image-box .description {
+.mobile .portfolio-page .image-box .description {
   padding-right: 25px;
   margin-bottom: 5px;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
 }
-.non-mobile .portfolio-page .image-box .btn {
+.mobile .portfolio-page .image-box .btn {
   margin-top: 30px;
   margin-bottom: 10px;
   padding: 0 23px;
@@ -72,11 +75,11 @@
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   cursor: pointer;
 }
-.non-mobile .portfolio-page .image-box .btn:hover {
+.mobile .portfolio-page .image-box .btn:hover {
   transform: translateY(-3px);
   background-color: #76ff8d;
 }
-.non-mobile .portfolio-page .image-box::after {
+.mobile .portfolio-page .image-box::after {
   content: "";
   background: linear-gradient(180deg, #76ff8d, #000);
   position: absolute;
@@ -90,10 +93,10 @@
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   opacity: 0;
 }
-.non-mobile .portfolio-page .image-box:hover::after {
+.mobile .portfolio-page .image-box:hover::after {
   opacity: 0.85;
 }
-.non-mobile .portfolio-page .image-box:hover .content {
+.mobile .portfolio-page .image-box:hover .content {
   bottom: 0;
   background: transparent;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index_mobile.css.map */

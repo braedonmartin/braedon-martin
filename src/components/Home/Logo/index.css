@@ -1,4 +1,4 @@
-.logo-container {
+.non-mobile .logo-container {
   z-index: 1;
   width: 557px;
   position: absolute;
@@ -14,7 +14,6 @@
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
-
 @-webkit-keyframes float {
   0% {
     transform: translatey(0px);
@@ -26,7 +25,6 @@
     transform: translatey(0px);
   }
 }
-
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -38,13 +36,12 @@
     transform: translatey(0px);
   }
 }
-svg {
+.non-mobile svg {
   width: 100%;
   height: auto;
   bottom: 0;
 }
-
-.solid-logo {
+.non-mobile .solid-logo {
   position: absolute;
   top: auto;
   right: auto;
@@ -61,8 +58,7 @@ svg {
   -webkit-user-drag: none;
   -ms-user-select: none;
 }
-
-.svg-container {
+.non-mobile .svg-container {
   stroke: rgba(118, 255, 141, 0.2666666667);
   stroke-width: 3px;
   -webkit-animation: fadeOut 5s forwards;
@@ -70,7 +66,6 @@ svg {
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
-
 @-webkit-keyframes fadeout {
   from {
     opacity: 1;
@@ -79,7 +74,6 @@ svg {
     opacity: 0;
   }
 }
-
 @keyframes fadeout {
   from {
     opacity: 1;
@@ -87,4 +81,4 @@ svg {
   to {
     opacity: 0;
   }
-}/*# sourceMappingURL=indes.css.map */
+}/*# sourceMappingURL=index.css.map */

@@ -1,71 +1,76 @@
 @use "../../colors" as *;
 
-.nav-bar {
-    width: 60px;
-    height: 100%;
-    position: absolute;
-    top: 0;
+.nav-bar-mobile {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
     z-index: 3; // Ensures the navbar is always on top of the page
-    min-height: 500px;
 
-    background: #181818;
+    background: #18181873;
 
     .page-select {
-        display: block;
+        display: flex;
         text-align: center;
-        position: absolute;
-        top: 37.5%;
+        align-items: center;
+        justify-content: space-evenly;
         width: 100%;
-    
+        height: 100%;
+        margin-bottom: -2px;
+
         a {
-            display: block;
             line-height: 51px; // centers the text
             height: 51px;
             position: relative;
             
+            width: 25px;
             font-size: 22px;
             color: $grey-icon;
             text-decoration: none;
-    
+
             i {
                 transition: all 0.3s ease-out;
             }
-    
+
             &.active svg{
                 color: $secondary;
             }
-    
+
             // On hover make the icon disappear and the text appear
             &:hover {
                 color: $secondary;
-    
+
                 svg {
                     opacity: 0;
                 }
-    
+
                 &::after {
                     opacity: 0.6;
                 }
             }
-    
+
             &::after {
                 content: ''; // added individually below
                 display: block;
-                width: 100%;            
+                width: 100%;
                 position: absolute;
+                left: -9px;
                 bottom: 0;
                 text-align: center;
-    
+
                 font-size: 9px;
                 letter-spacing: 2px;
                 opacity: 0;
                 transition: all 0.3s ease-out;
             }
-    
+
             &.home-link::after {
                 content: 'HOME';
             }
-    
+
             &.about-link::after {
                 content: 'ABOUT';
             }
@@ -76,36 +81,40 @@
                 content: 'CONTACT';
             }
         }
-    
+
     }
-    
+
     .outside-acc {
-        display: block;
-        width: 100%;
-        position: absolute;
-        bottom: 20px;
-        padding: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 75px;
+        height: 40px;
+        top: 0%;
+        right: 0;
+        padding-inline: 15px;
+        border-radius: 0 0 0 3px;
         margin: 0;
-    
+        background: #18181873;
+
         list-style: none;
         text-align: center;
-    
+
         li {
+            width: 18px;
             a {
                 display: block;
                 padding: 7px 0;
                 line-height: 16px;
-    
-                font-size: 15px;
+
+                font-size: 16px;
                 color: $grey-icon;
-    
+
                 &:hover svg {
                     color: $secondary;
                     transition: all 0.1s ease-out;
                 }
             }
         }
-    }
-   
-}
-
+    }}

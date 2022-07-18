@@ -1,13 +1,23 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import './index.scss'
 import Loader from 'react-loaders';
+import './index.scss';
+import './index_mobile.scss';
 
 function About() {
-    const [letterClass, setLetterClass] = useState('text-animate');
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
     
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            const ismobile = window.innerWidth < 700;
+            if (ismobile !== isMobile) setIsMobile(ismobile);
+        }, false);
+    }, [isMobile]);
+
+
+    const [letterClass, setLetterClass] = useState('text-animate');
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
@@ -15,7 +25,7 @@ function About() {
     }, [])
 
     return (
-        <>
+        <div className={`${isMobile ? "mobile" : "non-mobile"}`}>
             <div className="container about-page">
                 <div className='text-zone'>
                     <h1>
@@ -33,28 +43,28 @@ function About() {
                 <div className='stage-cube-cont'>
                     <div className='cubespinner'>
                         <div className='face1'>
-                            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                            <FontAwesomeIcon className='fa-fw' icon={faJsSquare} color="#EFD81D" />
                         </div>
                         <div className='face2'>
-                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                            <FontAwesomeIcon className='fa-fw' icon={faHtml5} color="#F06529" />
                         </div>
                         <div className='face3'>
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                            <FontAwesomeIcon className='fa-fw' icon={faCss3} color="#28A4D9" />
                         </div>
                         <div className='face4'>
-                            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                            <FontAwesomeIcon className='fa-fw' icon={faReact} color="#5ED4F4" />
                         </div>
                         <div className='face5'>
-                            <FontAwesomeIcon icon={faPython} color="#3775a8" />
+                            <FontAwesomeIcon className='fa-fw' icon={faPython} color="#3775a8" />
                         </div>
                         <div className='face6'>
-                            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                            <FontAwesomeIcon className='fa-fw' icon={faGitAlt} color="#EC4D28" />
                         </div>
                     </div>
                 </div>
             </div>
             <Loader type="pacman"/>
-        </>
+        </div>
     )
 }
 

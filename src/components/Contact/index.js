@@ -4,9 +4,21 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import './index.scss'
+import './index.scss';
+import './index_mobile.scss';
 
 const Contact = () => {
+  // Changes the page layout based on the screen size
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+    
+  useEffect(() => {
+      window.addEventListener("resize", () => {
+          const ismobile = window.innerWidth < 700;
+          if (ismobile !== isMobile) setIsMobile(ismobile);
+      }, false);
+  }, [isMobile]);
+
+
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
 
@@ -36,7 +48,7 @@ const Contact = () => {
   }
 
   return (
-    <>
+    <div className={`${isMobile ? "mobile" : "non-mobile"}`}>
       <div className="container contact-page">
         <div className="text-zone">
           <h1>
@@ -103,7 +115,7 @@ const Contact = () => {
         </div>
       </div>
       <Loader type="pacman" />
-    </>
+    </div>
   )
 }
 

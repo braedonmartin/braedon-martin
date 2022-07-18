@@ -1,20 +1,22 @@
 @use "../../colors" as *;
 
-.non-mobile {
+.mobile {
+    height: 100%;
     .home-page {
+        height: 100%;
         .text-zone {
             position: absolute;
-            left: 10%;
-            top: 50%;
+            left: 5%;
+            top: 45vw;
             transform: translateY(-50%);
-            width: 40%;
+            width: 80%;
             max-height: 90%;
             z-index: 2;
         }
 
         h1 {
             color: #fff;
-            font-size: 53px;
+            font-size: 12vw;
             margin: 0;
             font-family: 'Coolvetica';
             font-weight: 400;
@@ -42,7 +44,7 @@
                 opacity: 0.6;
             }
             img {
-                width: 40px;
+                width: 8.2vw;
                 margin-inline: 20px 3px;
                 opacity: 0;
                 height: auto;

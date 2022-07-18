@@ -1,32 +1,31 @@
-.non-mobile .page {
+.mobile .page {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.non-mobile .top-tags {
+.mobile .top-tags {
   bottom: auto;
-  top: 35px;
+  top: 15px;
 }
-.non-mobile .tags {
+.mobile .tags {
   color: #76ff8d;
   opacity: 0.6;
   position: absolute;
   bottom: 0;
-  left: 120px;
+  left: 25px;
   font-size: 18px;
   font-family: "La Belle Aurore";
 }
-.non-mobile .bottom-tag-html {
+.mobile .bottom-tag-html {
   margin-left: -20px;
 }
-.non-mobile .container {
+.mobile .container {
   width: 100%;
-  height: 90%;
   min-height: 566px;
   will-change: contents;
   position: absolute;
   opacity: 0;
-  top: 5%;
+  top: 13vh;
   margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;
@@ -35,9 +34,13 @@
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
-.non-mobile .about-page h1,
-.non-mobile .contact-page h1,
-.non-mobile .portfolio-page h1 {
+.mobile .contact-page {
+  height: 30%;
+  min-height: 0px;
+}
+.mobile .about-page h1,
+.mobile .contact-page h1,
+.mobile .portfolio-page h1 {
   font-size: 53px;
   font-family: "Coolvetica";
   color: #76ff8d;
@@ -47,9 +50,9 @@
   margin-bottom: 40px;
   left: 10px;
 }
-.non-mobile .about-page h1::before,
-.non-mobile .contact-page h1::before,
-.non-mobile .portfolio-page h1::before {
+.mobile .about-page h1::before,
+.mobile .contact-page h1::before,
+.mobile .portfolio-page h1::before {
   content: "<h1>";
   font-family: "La Belle Aurore";
   font-size: 18px;
@@ -59,9 +62,9 @@
   opacity: 0.6;
   line-height: 18px;
 }
-.non-mobile .about-page h1::after,
-.non-mobile .contact-page h1::after,
-.non-mobile .portfolio-page h1::after {
+.mobile .about-page h1::after,
+.mobile .contact-page h1::after,
+.mobile .portfolio-page h1::after {
   content: "</h1>";
   font-family: "La Belle Aurore";
   font-size: 18px;
@@ -72,9 +75,9 @@
   opacity: 0.6;
   line-height: 18px;
 }
-.non-mobile .about-page p,
-.non-mobile .contact-page p,
-.non-mobile .portfolio-page p {
+.mobile .about-page p,
+.mobile .contact-page p,
+.mobile .portfolio-page p {
   font-size: 15px;
   color: #fff;
   font-weight: 300;
@@ -85,38 +88,37 @@
   -webkit-animation: pulse 1s;
           animation: pulse 1s;
 }
-.non-mobile .about-page p:nth-of-type(1),
-.non-mobile .contact-page p:nth-of-type(1),
-.non-mobile .portfolio-page p:nth-of-type(1) {
+.mobile .about-page p:nth-of-type(1),
+.mobile .contact-page p:nth-of-type(1),
+.mobile .portfolio-page p:nth-of-type(1) {
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
 }
-.non-mobile .about-page p:nth-of-type(2),
-.non-mobile .contact-page p:nth-of-type(2),
-.non-mobile .portfolio-page p:nth-of-type(2) {
+.mobile .about-page p:nth-of-type(2),
+.mobile .contact-page p:nth-of-type(2),
+.mobile .portfolio-page p:nth-of-type(2) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
-.non-mobile .about-page p:nth-of-type(3),
-.non-mobile .contact-page p:nth-of-type(3),
-.non-mobile .portfolio-page p:nth-of-type(3) {
+.mobile .about-page p:nth-of-type(3),
+.mobile .contact-page p:nth-of-type(3),
+.mobile .portfolio-page p:nth-of-type(3) {
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
-.non-mobile .about-page .text-zone,
-.non-mobile .contact-page .text-zone,
-.non-mobile .portfolio-page .text-zone {
+.mobile .about-page .text-zone,
+.mobile .contact-page .text-zone,
+.mobile .portfolio-page .text-zone {
   position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35%;
+  left: 5%;
+  top: 35%;
+  width: 92%;
   vertical-align: middle;
   display: table-cell;
   max-height: 90%;
 }
-.non-mobile .about-page .text-animate-hover:hover,
-.non-mobile .contact-page .text-animate-hover:hover,
-.non-mobile .portfolio-page .text-animate-hover:hover {
+.mobile .about-page .text-animate-hover:hover,
+.mobile .contact-page .text-animate-hover:hover,
+.mobile .portfolio-page .text-animate-hover:hover {
   color: #fff;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index_mobile.css.map */

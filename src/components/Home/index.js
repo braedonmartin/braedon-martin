@@ -5,9 +5,20 @@ import AnimatedLetters from '../AnimatedLetters';
 import Logo from "./Logo";
 import BackgroundCode from './BackgroundCode';
 import Loader from 'react-loaders';
-import './index.scss'
+import './index.scss';
+import './index_mobile.scss';
 
 function Home() {
+    // Changes the page layout based on the screen size
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+    
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            const ismobile = window.innerWidth < 700;
+            if (ismobile !== isMobile) setIsMobile(ismobile);
+        }, false);
+    }, [isMobile]);
+
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = ['r', 'a', 'e', 'd', 'o', 'n']
     const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
@@ -21,7 +32,7 @@ function Home() {
     }, [letterClass]);
 
     return (
-        <>
+        <div className={`${isMobile ? "mobile" : "non-mobile"}`}>
             <div className="container home-page">
                 <effectStyle />
                 <div className="text-zone">
@@ -43,7 +54,7 @@ function Home() {
                 <BackgroundCode className='UseEffectStyle' />
             </div> 
             <Loader type="pacman"/>
-        </>
+        </div>
     );
 }
 

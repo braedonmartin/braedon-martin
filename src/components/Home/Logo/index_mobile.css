@@ -1,0 +1,82 @@
+.mobile .logo-container {
+  z-index: 1;
+  width: 31vh;
+  position: absolute;
+  bottom: 18%;
+  right: 5%;
+  left: auto;
+  opacity: 0.3;
+  transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+@-webkit-keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.mobile svg {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+.mobile .solid-logo {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  opacity: 0;
+  -webkit-animation: fadeIn ease 5s forwards;
+          animation: fadeIn ease 5s forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  user-drag: none;
+  -webkit-user-drag: none;
+  -ms-user-select: none;
+}
+.mobile .svg-container {
+  stroke: rgba(118, 255, 141, 0.2666666667);
+  stroke-width: 3px;
+  -webkit-animation: fadeOut 5s forwards;
+          animation: fadeOut 5s forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=index_mobile.css.map */
