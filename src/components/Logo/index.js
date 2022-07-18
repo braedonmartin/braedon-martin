@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useRef } from 'react'
-import LogoB from '../../../assets/images/Bangela.png'
-import './index.scss';
-import './index_mobile.scss';
+import LogoB from '../../assets/images/Bangela.png'
+import './styles/index.scss';
+import './styles/index_mobile.scss';
 
 function Logo() {
     // Changes the page layout based on the screen size

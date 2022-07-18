@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/Bangela.png';
-import AnimatedLetters from '../AnimatedLetters';
-import Logo from "./Logo";
-import BackgroundCode from './BackgroundCode';
+import AnimatedLetters from '../../components/AnimatedLetters';
+import Logo from "../../components/Logo";
+import BackgroundCode from '../../components/BackgroundCode';
 import Loader from 'react-loaders';
-import './index.scss';
-import './index_mobile.scss';
+import './styles/index.scss';
+import './styles/index_mobile.scss';
 
 function Home() {
     // Changes the page layout based on the screen size

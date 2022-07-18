@@ -7,8 +7,8 @@ import {
   faGithub,
   faDiscord,
 } from '@fortawesome/free-brands-svg-icons'
-import './index.scss';
-import './index_mobile.scss';
+import './styles/index.scss';
+import './styles/index_mobile.scss';
 
 function Sidebar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 700);

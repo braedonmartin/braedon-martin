@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, {useState, useEffect} from 'react';
-import AnimatedLetters from '../AnimatedLetters';
+import AnimatedLetters from '../../components/AnimatedLetters';
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
-import './index.scss';
-import './index_mobile.scss';
+import './styles/index.scss';
+import './styles/index_mobile.scss';
 
 function About() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 700);

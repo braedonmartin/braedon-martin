@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Loader from 'react-loaders';
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters";
 import portfolioData from '../../data/portfolio.json';
-import './index.scss';
-import './index_mobile.scss';
+import './styles/index.scss'
+import './styles/index_mobile.scss'
 
 function Portfolio() {
     // Changes the page layout based on the screen size

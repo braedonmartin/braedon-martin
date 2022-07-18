@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../Sidebar';
-import './index.scss';
-import './index_mobile.scss';
+import Sidebar from '../../components/Sidebar';
+import './styles/index.scss';
+import './styles/index_mobile.scss';
 
 function Layout() {
     // Changes the page layout based on the screen size

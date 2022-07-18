@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import './index.scss';
-import './index_mobile.scss';
+import './styles/index.scss';
+import './styles/index_mobile.scss';
 
 const Contact = () => {
   // Changes the page layout based on the screen size

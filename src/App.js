@@ -1,16 +1,16 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
+import Layout from './pages/Layout';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
 
 function App() {
   return (
     <div className='app'>
       <Routes>
-        <Route path='braedonmartin.com/' element={<Layout />}>
+        <Route exact path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />

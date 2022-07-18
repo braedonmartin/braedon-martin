@@ -1,4 +1,4 @@
-import './index.scss'
+import './styles/index.scss'
 
 function AnimatedLetters ({ letterClass, strArray, idx }) {
     return (

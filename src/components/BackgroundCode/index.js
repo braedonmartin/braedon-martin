@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import './index.scss'
+import './styles/index.scss'
 
 function BackgroundCode() {
     const codeRef = useRef()
