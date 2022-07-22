@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40px;
+    height: 4.3vh;
     z-index: 3; // Ensures the navbar is always on top of the page
 
     background: #18181873;
@@ -27,7 +27,7 @@
             position: relative;
             
             width: 25px;
-            font-size: 22px;
+            font-size: 3vh;
             color: $grey-icon;
             text-decoration: none;
 

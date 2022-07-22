@@ -1,15 +1,13 @@
 @use "../../../colors" as *;
 
 .non-mobile {
+    height: 100%;
+    width: 100%;
     .logo-container {
         z-index: 1;
-        width: 557px;
-        position: absolute;
-        top: 8%;
-        right: 14%;
-        bottom: 0;
-        left: auto;
-        margin: auto;
+        height: 90%;
+        width: 100%;
+        margin: 0;
         opacity: 1;
         transform: translatey(0px);
         animation: float 6s ease-in-out infinite;
@@ -28,21 +26,24 @@
         }
     }
 
-    svg {
-        width: 100%;
+    .logo-outline {
         height: auto;
+        width: min(40vw,557px);
+        position: absolute;
+        top: 8%;
+        left: 55%;
         bottom: 0;
+        margin: auto;
         //transform: rotateZ(30deg) !important;
     }
 
     .solid-logo {
+        width: min(40vw,557px);
         position: absolute;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: 0;
+        top: 8%;
+        left: 55%;
+        bottom: 0;
         margin: auto;
-        width: 100%;
         opacity: 0;
         animation: fadeIn ease 5s forwards;
         animation-delay: 5s;

@@ -83,5 +83,14 @@
 .mobile .info-map {
   position: absolute;
   opacity: 0;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+}
+.mobile .map-wrap {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
   z-index: -1;
 }/*# sourceMappingURL=index_mobile.css.map */

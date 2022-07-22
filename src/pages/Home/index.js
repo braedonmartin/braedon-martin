@@ -10,11 +10,11 @@ import './styles/index_mobile.scss';
 
 function Home() {
     // Changes the page layout based on the screen size
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 930);
     
     useEffect(() => {
         window.addEventListener("resize", () => {
-            const ismobile = window.innerWidth < 700;
+            const ismobile = window.innerWidth < 930;
             if (ismobile !== isMobile) setIsMobile(ismobile);
         }, false);
     }, [isMobile]);
@@ -35,6 +35,7 @@ function Home() {
         <div className={`${isMobile ? "mobile" : "non-mobile"}`}>
             <div className="container home-page">
                 <effectStyle />
+                {/* {isMobile ? null : <p className='mobile-notify'>Optimized for mobile!</p>} */}
                 <div className="text-zone">
                     <h1>
                         <span className={letterClass}>H</span>

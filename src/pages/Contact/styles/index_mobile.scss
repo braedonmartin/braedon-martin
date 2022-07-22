@@ -78,10 +78,10 @@
         .flat-button {
             color: $secondary;
             background: 0 0;
-            font-size: 11px;
+            font-size: min(2.8vw, 13px);
             letter-spacing: 3px;
             text-decoration: none;
-            padding: 8px 10px;
+            padding: min(2vw, 10px) min(2.5vw, 10px);
             border: 1px solid $secondary;
             float: right;
             border-radius: 4px;

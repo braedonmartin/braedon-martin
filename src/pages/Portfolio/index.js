@@ -7,11 +7,11 @@ import './styles/index_mobile.scss'
 
 function Portfolio() {
     // Changes the page layout based on the screen size
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 930);
     
     useEffect(() => {
         window.addEventListener("resize", () => {
-            const ismobile = window.innerWidth < 700;
+            const ismobile = window.innerWidth < 930;
             if (ismobile !== isMobile) setIsMobile(ismobile);
         }, false);
     }, [isMobile]);

@@ -2,6 +2,7 @@
 
 .non-mobile {
     .home-page {
+        height: 100%;
         .text-zone {
             position: absolute;
             left: 10%;
@@ -89,4 +90,16 @@
     .UseEffectStyle {
         animation: fadeIn 1s 1.9s backwards;
     }
+}
+
+.mobile-notify {
+    position: absolute;
+    top: -7%;
+    right: 0%;
+    color: white;
+    font-size: 20px;
+    background: #18181873;
+    width: 230px;
+    height: 40px;
+    text-align: center;
 }

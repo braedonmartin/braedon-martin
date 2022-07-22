@@ -7,11 +7,11 @@ import './styles/index.scss';
 import './styles/index_mobile.scss';
 
 function About() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 930);
     
     useEffect(() => {
         window.addEventListener("resize", () => {
-            const ismobile = window.innerWidth < 700;
+            const ismobile = window.innerWidth < 930;
             if (ismobile !== isMobile) setIsMobile(ismobile);
         }, false);
     }, [isMobile]);
@@ -35,9 +35,12 @@ function About() {
                             idx={15} // 1.5 second delay
                         />
                     </h1>
-                    <p>I'm a front end developer with a passion for coding and building things! I first learned how to code in 2016 and I've been in love with it ever since. It started with an introduction to C and C++ in school, and I have branched out further learning front-end technologies and taking courses such as Googles Professional Certificate in IT Automation with Python.</p>
-                    <p>I'm constantly learning new skills and always looking to gain more experience working with new languages. You can usually find me watching tutorials on something I find interesting or working on new projects!</p>
-                    <p></p> 
+                    <p>My love for Javascript guided me into the world of frontend. I fell in love with crafting beautiful UI's to
+                    improve the user's experience. As a result, I've come to admire the way things are done in React and the JAMstack ecosystem
+                    as it has allowed me to do more and power up my JS skills further. But I am not beholden to it. Svelte for example is a very interesting project that has caught my eye recently. I am always paying attention to the paradigm shifts that happen in the Javascript world.</p>
+                    <p>I have worked solo as a freelancer but I always enjoy working with teams. I think it is essential to bounce ideas off
+                    one another in the hopes of accomplishing a shared goal, which I can't really find when I am working by myself.
+                    Listening to others perspectives helps all of us understand and deconstruct a problem better.</p> 
                 </div>
 
                 <div className='stage-cube-cont'>
