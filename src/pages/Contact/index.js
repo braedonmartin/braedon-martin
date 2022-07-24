@@ -10,6 +10,13 @@ import './styles/index_mobile.scss';
 const Contact = () => {
   // Changes the page layout based on the screen size
   const [isMobile, setIsMobile] = useState(window.innerWidth < 930);
+  const [letterClass, setLetterClass] = useState('text-animate')
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  })
     
   useEffect(() => {
       window.addEventListener("resize", () => {
@@ -19,7 +26,6 @@ const Contact = () => {
   }, [isMobile]);
 
 
-  const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
 
   useEffect(() => {
@@ -67,13 +73,21 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input 
+                    placeholder="Name" 
+                    type="text" 
+                    name="name" 
+                    value={formData.name}
+                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    required />
                 </li>
                 <li className="half">
                   <input
                     placeholder="Email"
                     type="email"
                     name="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
                     required
                   />
                 </li>
@@ -82,6 +96,8 @@ const Contact = () => {
                     placeholder="Subject"
                     type="text"
                     name="subject"
+                    value={formData.subject}
+                    onChange={(e) => setFormData({...formData, subject: e.target.value})}
                     required
                   />
                 </li>
@@ -89,11 +105,16 @@ const Contact = () => {
                   <textarea
                     placeholder="Message"
                     name="message"
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
                     required
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input 
+                    type="submit" 
+                    className="flat-button" 
+                    value="SEND" />
                 </li>
               </ul>
             </form>
