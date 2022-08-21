@@ -37,7 +37,8 @@ function About() {
                     </h1>
                     <p>My love for Javascript guided me into the world of frontend. I fell in love with crafting beautiful UI's to
                     improve the user's experience. As a result, I've come to admire the way things are done in the React ecosystem
-                    as it has allowed me to do more and power up my JS skills further. But I am not beholden to it. Svelte for example is a very interesting project that has caught my eye recently. I am always paying attention to the paradigm shifts that happen in the Javascript world.</p>
+                    as it has allowed me to do more and power up my JS skills further. But I am not beholden to it. In my opinion one
+                    of my main advantages as a developer is to change and adapt, I can easily learn new skills as they're needed. Grow to the scope of whatever project I'm a part of.</p>
                     <p>I have worked solo as a freelancer but I always enjoy working with teams. I think it is essential to bounce ideas off
                     one another in the hopes of accomplishing a shared goal, which I can't really find when I am working by myself.
                     Listening to others perspectives helps all of us understand and deconstruct a problem better.</p> 
