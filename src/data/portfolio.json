@@ -11,6 +11,12 @@
             "title": "Tenzies",
             "description": "A simple game of tenzies, the goal is to make all the dice the same value and upon winning the page rains confetti and the user can start a new game.",
             "url": "https://braedonmartin.github.io/tenzies-game/"
+        },
+        {
+            "cover": "/portfolio/hccs-electrical/hccs-electrical.png",
+            "title": "HCCS Electrical",
+            "description": "An electrician website I made for a client. It's made to be highly expandable and grow with their business. Includes both desktop and mobile versions.",
+            "url": "https://www.hccselectrical.com/"
         }
     ]
 }

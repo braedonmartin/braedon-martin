@@ -42,9 +42,9 @@ function About() {
                     <p>I have worked solo as a freelancer but I always enjoy working with teams. I think it is essential to bounce ideas off
                     one another in the hopes of accomplishing a shared goal, which I can't really find when I am working by myself.
                     Listening to others perspectives helps all of us understand and deconstruct a problem better.</p> 
-                    <p>Currently I'm enjoying the world of app development and React Native, I'm learning how to use 
-                      Firebase and work with it as a backend. Together with a very close friend building an app from
-                      the ground up and learning everything needed to make it a reality. It's a very exciting world and I'm learning and growing so much every day, both as a developer and as a person.</p>
+                    <p>Currently I'm learning the world of app development and React Native, how to use 
+                      Firebase and work with it as a backend. Together with a friend building an app from
+                      the ground up and learning everything needed to make it a reality. It's a very exciting world and I'm learning and growing so much every day.</p>
                 </div>
 
                 <div className='stage-cube-cont'>

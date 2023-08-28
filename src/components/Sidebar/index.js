@@ -6,6 +6,7 @@ import {
   faLinkedin,
   faGithub,
   faDiscord,
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import './styles/index.scss';
 import './styles/index_mobile.scss';
@@ -83,6 +84,15 @@ function Sidebar() {
               href="https://discordapp.com/users/3567/"
             >
               <FontAwesomeIcon icon={faDiscord} />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/braedon_the_sloth/"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>
         </ul>

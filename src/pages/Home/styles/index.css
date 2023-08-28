@@ -1,6 +1,13 @@
 .non-mobile .home-page {
   height: 100%;
 }
+.non-mobile .home-page .profile {
+  position: absolute;
+  width: 30%;
+  top: 8%;
+  left: 55%;
+  box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+}
 .non-mobile .home-page .text-zone {
   position: absolute;
   left: 10%;

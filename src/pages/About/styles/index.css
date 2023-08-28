@@ -1,14 +1,24 @@
-.non-mobile .stage-cube-cont {
-  width: 50%;
+.non-mobile {
   height: 100%;
-  top: 0;
-  padding-top: 18%;
-  margin-left: 0;
+  width: 100%;
+}
+.non-mobile .about-page p {
+  min-width: 400px !important;
+}
+.non-mobile .about-page .stage-cube-cont {
+  width: 100%;
+  height: 100%;
+  margin: 0;
   position: absolute;
-  right: 0;
   overflow: hidden;
 }
-.non-mobile .cubespinner {
+.non-mobile .about-page .cubespinner {
+  width: min(40vw, 557px);
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  bottom: 0;
+  margin: auto;
   -webkit-animation-name: spincube;
           animation-name: spincube;
   -webkit-animation-timing-function: ease-in-out;
@@ -23,7 +33,7 @@
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
 }
-.non-mobile .cubespinner div {
+.non-mobile .about-page .cubespinner div {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -35,28 +45,29 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 20px 0px #76ff8d;
+  font-size: 180px;
 }
-.non-mobile .cubespinner .face1 {
+.non-mobile .about-page .cubespinner .face1 {
   transform: translateZ(100px);
   color: #dd0031;
 }
-.non-mobile .cubespinner .face2 {
+.non-mobile .about-page .cubespinner .face2 {
   transform: rotateY(90deg) translateZ(100px);
   color: #f06529;
 }
-.non-mobile .cubespinner .face3 {
+.non-mobile .about-page .cubespinner .face3 {
   transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
   color: #28a4d9;
 }
-.non-mobile .cubespinner .face4 {
+.non-mobile .about-page .cubespinner .face4 {
   transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
   color: #5ed4f4;
 }
-.non-mobile .cubespinner .face5 {
+.non-mobile .about-page .cubespinner .face5 {
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
   color: #efd81d;
 }
-.non-mobile .cubespinner .face6 {
+.non-mobile .about-page .cubespinner .face6 {
   transform: rotateX(-90deg) translateZ(100px);
   color: #ec4d28;
 }

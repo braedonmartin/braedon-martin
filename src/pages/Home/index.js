@@ -48,7 +48,7 @@ function Home() {
                         <br />
                         <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={21} />
                     </h1>
-                    <h2>Frontend Developer / Javascript Enthusiast / Freelancer</h2>
+                    <h2>Frontend and App Developer / Javascript Enthusiast / Freelancer</h2>
                     <Link to="/contact" className='flat-button'>CONTACT ME</Link>
                 </div>
                 <Logo />
