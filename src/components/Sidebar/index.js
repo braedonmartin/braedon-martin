@@ -86,15 +86,6 @@ function Sidebar() {
               <FontAwesomeIcon icon={faDiscord} />
             </a>
           </li>
-          <li>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.instagram.com/braedon_the_sloth/"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </li>
         </ul>
       </div>
   )
