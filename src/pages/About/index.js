@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, {useState, useEffect} from 'react';
 import AnimatedLetters from '../../components/AnimatedLetters';
-import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCss3, faHtml5, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import C from '../../assets/images/C.png';
 import Loader from 'react-loaders';
 import './styles/index.scss';
 import './styles/index_mobile.scss';
@@ -65,7 +66,7 @@ function About() {
                             <FontAwesomeIcon className='fa-fw' icon={faPython} color="#3775a8" />
                         </div>
                         <div className='face6'>
-                            <FontAwesomeIcon className='fa-fw' icon={faGitAlt} color="#EC4D28" />
+                          <img src={C} alt="C" />
                         </div>
                     </div>
                 </div>

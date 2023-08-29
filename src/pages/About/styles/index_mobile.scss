@@ -83,7 +83,10 @@
       }
       .face6 {
         transform: rotateX(-90deg) translateZ(min(19vw,140px));
-        color: #ec4d28;
+        img {
+          height: auto;
+          width: 90%;
+        }
       }
     }
     
