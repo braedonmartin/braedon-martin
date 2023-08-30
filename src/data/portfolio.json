@@ -17,6 +17,12 @@
             "title": "HCCS Electrical",
             "description": "An electrician website I made for a client. It's made to be highly expandable and grow with their business. Includes both desktop and mobile versions.",
             "url": "https://www.hccselectrical.com/"
+        },
+        {
+            "cover": "/portfolio/capybara/capybara.jpg",
+            "title": "Capybara",
+            "description": "A social sports platform for people to meetup and play. Built from the ground up using React Native and firebase as a backend to host the data. Still actively being developed.",
+            "url": ""
         }
     ]
 }

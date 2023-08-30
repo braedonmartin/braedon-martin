@@ -39,7 +39,10 @@ function Portfolio() {
                                     <div className="content">
                                         <p className="title">{port.title}</p>
                                         <h4 className="description">{port.description}</h4>
-                                        <button className="btn" onClick={() => window.open(port.url)}>VIEW</button>
+                                        {port.url 
+                                          ? <button className="btn" onClick={() => window.open(port.url)}>VIEW</button> 
+                                          : <div className="spacer"></div>
+                                        }
                                     </div>
                                 
                                 </div>
