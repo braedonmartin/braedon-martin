@@ -77,15 +77,6 @@ function Sidebar() {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
-          <li>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://discordapp.com/users/3567/"
-            >
-              <FontAwesomeIcon icon={faDiscord} />
-            </a>
-          </li>
         </ul>
       </div>
   )
