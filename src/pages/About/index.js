@@ -43,9 +43,7 @@ function About() {
                     <p>I have worked solo as a freelancer but I always enjoy working with teams. I think it is essential to bounce ideas off
                     one another in the hopes of accomplishing a shared goal, which I can't really find when I am working by myself.
                     Listening to others perspectives helps all of us understand and deconstruct a problem better.</p> 
-                    <p>Currently I'm learning the world of app development and React Native, how to use 
-                      Firebase and work with it as a backend. Together with a friend building an app from
-                      the ground up and learning everything needed to make it a reality. It's a very exciting world and I'm learning and growing so much every day.</p>
+                    <p>Currently, I’m deepening my skills in app development with React Native, while also exploring instructional design to create training modules that enhance learning experiences. This exciting journey allows me to blend my technical expertise with design principles, building intuitive content that drives user engagement. I’m always expanding my expertise across diverse areas, staying adaptable and open to new knowledge that strengthens my ability to tackle any project.</p>
                 </div>
 
                 <div className='stage-cube-cont'>

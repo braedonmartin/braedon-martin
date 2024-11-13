@@ -21,7 +21,7 @@
         {
             "cover": "/portfolio/capybara/capybara.jpg",
             "title": "Capybara",
-            "description": "A social sports platform for people to meetup and play. Built from the ground up using React Native and firebase as a backend to host the data. Still actively being developed.",
+            "description": "A social sports platform for people to meetup and play. Built from the ground up using React Native and firebase as a backend to host the data.",
             "url": ""
         }
     ]
